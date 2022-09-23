@@ -34,3 +34,6 @@ $ cd ~
 $ nano .bashrc
 -	alias python=python3
 -	alias pip=pip3
+
+6)Cómo ejecutar el programa desde el terminal:
+$ python TFLite_detection_webcam.py --modeldir=coco_ssd_mobilenet_v1
