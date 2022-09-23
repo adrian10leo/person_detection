@@ -35,5 +35,9 @@ $ nano .bashrc
 -	alias python=python3
 -	alias pip=pip3
 
+Para descargar la red que hemos utilizado en este trabajo, se puede descargar desde el siguiente enlace, e introducirla en la carpeta donde este el ejecutable .py:
+wget http://download.tensorflow.org/models/object_detection/tf1/spaghettinet_edgetpu_l_2021_10_13.tar.gz
+tar xf spaghettinet_edgetpu_l_2021_10_13.tar.gz
+
 6)Cómo ejecutar el programa desde el terminal:
 $ python TFLite_detection_webcam.py --modeldir=spaghettinet_edgetpu_l
