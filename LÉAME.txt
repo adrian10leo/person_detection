@@ -1,1 +1,36 @@
-texto
+Antes de compilar el ejecutable necistas instalar estas librerías en la RASPBERRY PI 3B+.
+
+1) Actualizar RASPBERRY PI 3B+
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
+
+2) WEBCAM
+$ sudo apt install fswebcam
+
+3)TensorFLow Lite
+$ python3 -m pip install tflite-runtime
+$ sudo apt-get install libatlas-base-dev
+$ sudo pip3 install pillow lxml jupyter matplotlib cython
+$ sudo apt-get install python-tk
+$ sudo apt-get install protobuf-compiler
+
+3)OpenCV
+$ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+$ sudo apt-get install libxvidcore-dev libx264-dev
+$ sudo apt-get install qt4-dev-tools libatlas-base-dev
+$ sudo pip3 install opencv-python
+
+4)Python 3
+$ wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+$ tar xf Python-3.7.3.tar.xz
+$ cd Python-3.7.3
+$ ./configure –prefix=/usr/local/lib/python-3.7.3
+$ make -j 4
+$ sudo make altinstall
+
+5)Insertar al final del archivo .bashrc 2 lineas de comandos:
+$ cd ~
+$ nano .bashrc
+-	alias python=python3
+-	alias pip=pip3
