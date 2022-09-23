@@ -35,11 +35,10 @@ def email ():
      
      global enviar
      if aforo==0 and enviar==0:         #comprueba si el aforo ha bajado, si ha bajado, no se envia el email
-        sender_email = "elprofesordemates10@gmail.com"
-        rec_email = "adrian_r10_5@hotmail.com"
+        sender_email = "email de quien lo envía"
+        rec_email = "email de quien lo recibe"
         #password = input(str("Please enter your password : "))
-        password = str("jabrklqwkuteuykk")
-#       message = "http://controldeaforo.site"
+        password = str("contraseña del email de quien lo envía")
         message = "Subject:Informacion de Aforo\n\nAforo Completo: http://controldeaforo.site"
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.starttls()
